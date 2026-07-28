@@ -1,6 +1,6 @@
 # Scrappy
 
-A scalable web scraping platform built with **Django** and **Django REST Framework** that allows extracting, storing, and exposing web data through a RESTful API.
+A work-in-progress scalable web scraping platform built with **Django** and **Django REST Framework** that allows extracting, storing, and exposing web data through a RESTful API.
 
 This project focuses on backend development practices such as API design, database management, asynchronous processing, containerization, and automated data collection.
 

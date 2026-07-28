@@ -8,16 +8,7 @@ This project focuses on backend development practices such as API design, databa
 
 ## Features
 
-- Web scraping from external websites
-- REST API built with Django REST Framework
-- Data persistence using PostgreSQL
-- Docker & Docker Compose support
-- Background scraping tasks with Celery
-- Scheduled scraping jobs
-- Structured and normalized scraped data
-- API endpoints for querying collected information
-- Logging system for scraper activity and errors
-
+- Soon
 ---
 
 # Tech Stack
@@ -27,10 +18,8 @@ This project focuses on backend development practices such as API design, databa
 - Python 3.12
 - Django
 - Django REST Framework
-- Celery
-- BeautifulSoup / Scrapy
-- PostgreSQL
 - Redis
+- Celery
 
 ## Infrastructure
 
@@ -202,16 +191,13 @@ webscraper/
 - [ ] Add support for multiple scraping providers
 - [ ] Implement authentication with JWT
 - [ ] Add scraper dashboard
-- [ ] Add monitoring with Prometheus/Grafana
-- [ ] Improve anti-blocking strategies
 - [ ] Add automated tests
-- [ ] Deploy using Kubernetes
 
 ---
 
 # Learning Goals
 
-This project was created to practice:
+This project is being created to practice:
 
 - Backend architecture design
 - REST API development

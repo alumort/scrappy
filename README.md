@@ -1,31 +1,33 @@
 # Scrappy
 
-A work-in-progress scalable web scraping platform built with **Django** and **Django REST Framework** that allows extracting, storing, and exposing web data through a RESTful API.
+A web scraping API built with Django and Django REST Framework.
 
-This project focuses on backend development practices such as API design, database management, asynchronous processing, containerization, and automated data collection.
+Scrappy is designed to collect information from websites, process the extracted data, and expose it through a REST API. The project follows a service-oriented architecture, making it easy to extend with new scrapers.
 
 ---
 
 ## Features
 
-- Soon
+- Django REST Framework
+- Dockerized development environment
+- PostgreSQL database
+- Modular scraper architecture
+- BeautifulSoup parsing
+- Background tasks support (Celery - upcoming)
+- Multi-site scraping support (planned)
 ---
 
 # Tech Stack
 
-## Backend
-
 - Python 3.12
 - Django
 - Django REST Framework
-- Redis
-- Celery
-
-## Infrastructure
-
+- PostgreSQL
 - Docker
-- Docker Compose
-- Linux environment
+- BeautifulSoup4
+- Requests
+- Celery (planned)
+- Redis (planned)
 
 ---
 
@@ -65,7 +67,7 @@ This project focuses on backend development practices such as API design, databa
 ```bash
 git clone https://github.com/alumort/scrappy.git
 
-cd webscraper
+cd scrappy
 ```
 
 ---
@@ -168,20 +170,7 @@ Database
 # Project Structure
 
 ```
-webscraper/
-│
-├── apps/
-│   ├── scraper/
-│   ├── api/
-│   └── core/
-│
-├── config/
-│
-├── docker-compose.yml
-├── Dockerfile
-├── requirements.txt
-├── manage.py
-└── README.md
+
 ```
 
 ---

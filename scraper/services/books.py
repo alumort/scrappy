@@ -1,10 +1,24 @@
 from .base import BaseScraper
 
 class BookScraper(BaseScraper):
-    url = 'https://books.toscrape.com/'
+    def __init__(self):
+        super().__init__("https://books.toscrape.com/")
 
-scraper = BookScraper()
+    def scrape(self):
+        soup = self._get_html()
+        books = soup.select("article.product_pod")
 
-print(scraper.url)
+        results = []
 
-soup = scraper._get_html()
+        for book in books:
+            title = book.h3.a["title"]
+            price = book.select_one(".price_color").text.strip()
+            rating = book.select_one(".star-rating")["class"][1]
+
+            results.append({
+                "title": title,
+                "price": price,
+                "rating": rating,
+            })
+
+        return results
